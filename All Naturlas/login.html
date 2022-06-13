@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fontawesome.com/icons?d=gallery&p=2" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="fonts/fontawesome.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <h4>All Naturals</h4>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html" title="home">Home</a></li>
+              <li><a href="index.html" title="about">Products</a></li>
+              <li><a href="index.html" title="contact">About</a></li>
+              <li><a href="#contact" title="service">Contact</a></li>
+              <li><a href="login.html" title="blog">Account</a></li>
+            </ul>
+          </nav>
+          <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img src="images/image1.png" width="600px" height="600px" />
+          </div>
+          <div class="form-box">
+            <div class="button-box">
+              <div id="btn"></div>
+              <button type="button" class="toggle-btn" onclick="login()">
+                LOGIN
+              </button>
+              <button type="button" class="toggle-btn" onclick="signup()">
+                SIGN UP
+              </button>
+            </div>
+            <div class="social-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-google"></i>
+            </div>
+            <form id="login" class="input-group">
+              <input
+                type="email"
+                class="input-field"
+                placeholder="Email Id"
+                required
+              />
+              <input
+                type="password"
+                class="input-field"
+                placeholder="Enter Password"
+                required
+              />
+              <input type="checkbox" class="check-box" /><span
+                >Remember Password</span
+              >
+              <button type="submit" class="submit-btn">LOGIN</button>
+            </form>
+            <form id="signup" class="input-group" method="post" action="login.php">
+              <input
+                type="text"
+                class="input-field"
+                placeholder="First Name"
+                name="fname"
+                id="fname"
+                required
+              />
+              <div name="fn" id="fn"></div>
+              <input
+                type="text"
+                class="input-field"
+                placeholder="Last Name"
+                id="lname"
+                name="lname"
+                required
+              />
+              <div name="fn" id="fn"></div>
+              <input
+                type="email"
+                class="input-field"
+                placeholder="Email Id"
+                required
+                name="email"
+                id="email"
+              />
+              <div name="fn" id="fn"></div>
+              <input
+                type="password"
+                class="input-field"
+                placeholder="Enter Password"
+                id="pass"
+                name="pass"
+                required
+              />
+              <div name="fn" id="fn"></div>
+              <input
+                type="password"
+                class="input-field"
+                placeholder="Confirm Password"
+                id="cpass"
+                name="cpass"
+                required
+              />
+              <div name="fn" id="fn"></div>
+              <input type="checkbox" class="check-box" /><span
+                >I agree to the terms & conditions</span
+              >
+              <button type="submit" class="submit-btn" onclick="validate()">
+                SIGN UP
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- java script -->
+    <script src="main.js"></script>
+  </body>
+</html>
